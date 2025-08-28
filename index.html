@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Playground</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav>
+      <h2 class="logo">JS Playground</h2>
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#part1">Basics</a></li>
+        <li><a href="#part2">Functions</a></li>
+        <li><a href="#part3">Loops</a></li>
+        <li><a href="#part4">DOM</a></li>
+      </ul>
+      <button id="darkModeBtn">🌙 Dark Mode</button>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <h1>🚀 Welcome to My JavaScript Project</h1>
+    <p id="greetingText">Enter your name to personalize the site 👇</p>
+    <input type="text" id="userName" placeholder="Your name">
+    <button onclick="setGreeting()">Save Name</button>
+  </section>
+
+  <!-- Part 1 -->
+  <section id="part1" class="card hidden">
+    <h2>❤️ Part 1: Variables & Conditionals</h2>
+    <p>Check if you are an adult or minor:</p>
+    <input type="number" id="userAge" placeholder="Enter your age">
+    <button onclick="checkAge()">Check Age</button>
+    <p id="ageResult"></p>
+  </section>
+
+  <!-- Part 2 -->
+  <section id="part2" class="card hidden">
+    <h2>❤️ Part 2: Functions</h2>
+    <p>Example: Calculate the total cost of 3 items, each at 100 KES.</p>
+    <button onclick="showTotal()">Calculate Total</button>
+    <p id="totalResult"></p>
+  </section>
+
+  <!-- Part 3 -->
+  <section id="part3" class="card hidden">
+    <h2>🔁 Part 3: Loops</h2>
+    <p>Generate a live countdown timer (from 5 seconds):</p>
+    <button onclick="startLiveCountdown()">Start Countdown</button>
+    <p id="liveCountdown"></p>
+  </section>
+
+  <!-- Part 4 -->
+  <section id="part4" class="card hidden">
+    <h2>🌐 Part 4: DOM Manipulation</h2>
+    <button onclick="toggleText()">Toggle Text</button>
+    <p id="toggleParagraph">This text can be toggled!</p>
+
+    <button onclick="addListItem()">Add Item</button>
+    <ul id="dynamicList"></ul>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 JavaScript Playground | Built with ❤️ by Ian</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
